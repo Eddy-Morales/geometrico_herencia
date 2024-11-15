@@ -13,14 +13,15 @@ public class Circulo extends d2{
     }
 
     public double calcularAreaCirculo(double radio){
-        System.out.println("area circulo: ");
-        return Math.PI * (radio*radio);
+        return Math.PI * Math.pow(radio, 2);
     }
-    
-    public void calcularPerimetroCirculo(){
-        System.out.println("perimetro circulo");
+
+    public double calcularPerimetroCirculo( double radio){
+        return 2 * Math.PI * radio;
     }
     public void mostrarDatosCirculo(){
-        System.out.println("datos circulo");
+        System.out.println("datos circulo:");
+        System.out.println("Area: "+calcularAreaCirculo(radio));
+        System.out.println("Perimetro: "+calcularPerimetroCirculo(radio));
     }
 }

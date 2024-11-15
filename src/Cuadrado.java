@@ -11,15 +11,17 @@ public class Cuadrado extends d2{
     public void setLado(double lado) {
         this.lado = lado;
     }
-    @Override
-    public void calcularArea(){
-        System.out.println("area");
+
+    public double calcularAreaCuadrado(double lado) {
+        return lado * lado;
     }
-    @Override
-    public void calcularPerimetro(){
-        System.out.println("volumen");
+
+    public double calcularPerimetroCuadrado(double lado) {
+        return 4 * lado;
     }
     public void mostrarDatosCuadrado(){
-        System.out.println("datos cuadrado");
+        System.out.println("datos cuadrado:");
+        System.out.println("Area: " + calcularAreaCuadrado(lado));
+        System.out.println("Perimetro: " + calcularPerimetroCuadrado(lado));
     }
 }
